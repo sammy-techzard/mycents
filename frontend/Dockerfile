@@ -2,11 +2,11 @@ FROM node:18 as builder
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
-RUN npm install
+COPY package.json yarn.lock ./
+RUN yarn install
 
 COPY . .
-RUN npm run build
+RUN yarn build
 
 # Serve using Nginx
 FROM nginx:1.23-alpine
