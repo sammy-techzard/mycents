@@ -27,7 +27,7 @@ function Dashboard() {
     return (
         <div className="main-content-div">
             <MainContentHeader 
-                title="Transactions" 
+                title="Dashboard" 
                 actionName="Add Transaction" 
                 actionValue={handleShowAddTransactionModel} 
             />
