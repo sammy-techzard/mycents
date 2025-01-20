@@ -48,7 +48,7 @@ Ensure you have the following installed:
 
    ```bash
    git clone https://github.com/sammy-techzard/mycents.git
-   cd myCents/backend
+   cd mycents/backend
    ```
 
 2. Create and activate a virtual environment:
