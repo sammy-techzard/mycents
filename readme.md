@@ -37,8 +37,8 @@ Access the live demo here: [myCents Live](https://coachallenge.lajiktech.com/)
 
 Ensure you have the following installed:
 
-- Python 3.9+
-- Node.js (v16+)
+- Python 3.13.1
+- Node.js 22
 - Yarn
 - Docker and Docker Compose
 
