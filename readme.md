@@ -4,7 +4,7 @@ myCents is a budgeting application designed to help users effectively manage the
 
 ## Live Demo
 
-Access the live demo here: [myCents Live](http://example-live-link.com)
+Access the live demo here: [myCents Live](https://coachallenge.lajiktech.com/)
 
 **Test Credentials**
 
@@ -47,7 +47,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/myCents.git
+   git clone https://github.com/sammy-techzard/mycents.git
    cd myCents/backend
    ```
 
@@ -117,12 +117,6 @@ Ensure you have the following installed:
 - Backend: Use Gunicorn and Nginx to serve the Django application.
 - Frontend: Build the React app and serve it using Nginx.
 
-## Scalability
-
-- **Horizontal Scaling:** Using multiple backend instances behind a load balancer (e.g., AWS ALB, Nginx).
-- **Vertical Scaling:** Increasing resources (CPU, memory) of the server.
-- **Database Optimization:** Use read replicas and caching strategies with tools like Redis.
-- **Frontend Optimization:** Use a CDN for static assets.
 
 ## License
 
