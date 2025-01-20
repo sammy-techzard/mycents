@@ -1,0 +1,97 @@
+@media (max-width: 700px) {
+    .main-app-menu {
+        width: 100vw;
+        display: flex
+    ;
+        position: fixed;
+        bottom: 0;
+        height: 80px;
+    } 
+    nav.native-card.main-menu-nav {
+        background-color: #fff;
+        border-radius: 0px;
+        display: flex
+    ;
+        opacity: 1;
+        min-height: 100%;
+        animation: none;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .main-app-menu-logo {
+        display: none;
+    }
+    .main-menu-items-holder {
+        flex-direction: row;
+        margin: 0;
+        width: 100%;
+        margin: 0;
+    }
+    span.main-menu-item-name {
+        display: flex
+;
+        width: 100%;
+        justify-content: center;
+    }
+    .main-menu-holder {
+        display: flex
+    ;
+        width: 100%;
+    }
+    a.main-menu-item {
+        justify-content: center;
+        flex-direction: column;
+    }
+    a.main-menu-item.active {
+        background: inherit;;
+    }
+    a.main-menu-item:hover {
+        background: inherit;;
+    }
+    a.main-menu-item.active:hover {
+        background: inherit;
+      }
+    a.main-menu-item.active .main-menu-item-icon {
+        background: var(--primary-color);
+        border-radius: 40px;
+        width: 60px;
+    }
+    a.main-menu-item.active .main-menu-item-name {
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+    .main-content-header-button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 100px;
+        margin-right: 40px;
+        display: flex
+      ;
+    }
+    button.main-content-header-button-el {
+        height: 60px;
+        margin-right: 0px;
+    }
+      span.main-content-header-button-title {
+        display: none;
+    }
+    .main-app-wrap-board {
+        width: calc(100% );
+    }
+    .two-col-i-big {
+        width: 100%;
+    }
+    .two-col-i-small {
+        width: 100%;
+    }
+    .two-col-holder {
+        flex-direction: column;
+    }
+    .main-app-wrap-board {
+        display: block;
+        overflow: unset;
+        height: max-content;
+    }
+}
