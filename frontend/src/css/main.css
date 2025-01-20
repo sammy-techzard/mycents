@@ -705,3 +705,83 @@ span.transaction-table-icon {
   max-width: 850px;
   margin-top: 20px;
 }
+.main-menu-footer-user {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-inline: 40px;
+  min-width: 100px;
+  min-height: 40px;
+  border-radius: 40px;
+  display: flex
+;
+  margin-block: 60px;
+  max-width: 160px;
+}
+.main-menu-footer-user-holder {
+  position: relative;
+  display: flex
+;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  min-width: 140px;
+}
+.main-menu-footer-user-info {
+  display: flex
+;
+  width: calc(100% - 20px);
+  margin-inline: 10px;
+}
+
+.main-menu-footer-user-info span {
+  min-width: 40px;
+}
+
+.main-menu-footer-user-info span {
+  font-size: 14px;
+  color: #333;
+}
+
+.main-menu-footer-user-logout-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(5px);
+  display: none;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  padding-inline: 20px;
+}
+
+.main-menu-footer-user-logout-dropdown.active {
+  display: block;
+}
+
+.main-menu-footer-user-logout-dropdown span {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+}
+
+.main-menu-footer-user-logout-dropdown span:hover {
+  background-color: #f0f0f0;
+}
+
+.main-menu-footer-user-holder.pop-up .main-menu-footer-user-logout-dropdown {
+  top: auto; /* Reset dropdown positioning */
+  bottom: 100%; /* Dropdown will appear above */
+  transform: translateY(-10px);
+}

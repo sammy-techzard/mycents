@@ -10,14 +10,15 @@ RUN yarn install
 
 # Copy the rest of the app's source code
 COPY . .
-
-# Copy the .env file (if needed)
-# COPY .env ./
+# ch
+# Inject environment variable for React build
+ARG REACT_APP_BACKEND_URL
+ENV REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL}
 
 # Build the React app
 RUN yarn build
 
-# Serve the app (optional: if using a server like Nginx)
+# Serve the app
 RUN yarn global add serve
 CMD ["serve", "-s", "build", "-l", "3000"]
 

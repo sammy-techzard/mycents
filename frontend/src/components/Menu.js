@@ -4,7 +4,7 @@ import CreditCardRoundedIcon from '@mui/icons-material/CreditCardRounded';
 import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
 import SavingsRoundedIcon from '@mui/icons-material/SavingsRounded';
 import CurrencyExchangeRoundedIcon from '@mui/icons-material/CurrencyExchangeRounded';
-
+import UserMenu from './UserIconMenu';
 
 import mainapplogo from '../logo/logo512.png'
 function Menu() {
@@ -20,6 +20,9 @@ function Menu() {
           <MenuItem icon={CurrencyExchangeRoundedIcon} name="Transactions" page="/app/transactions" />
           <MenuItem icon={CategoryRoundedIcon} name="Categories" page="/app/categories" />
           <MenuItem icon={SavingsRoundedIcon} name="Budget" page="/app/budget" />
+        </div>
+        <div className='main-menu-footer-user'>
+          <UserMenu />
         </div>
         
           
