@@ -31,12 +31,8 @@ class Transaction(models.Model):
     def __str__(self):
         return f"{self.user.username} - {self.transaction_type} - {self.amount}"
 
-    def clean(self):
-        """Custom validation to ensure expense does not exceed current balance."""
-        if self.transaction_type == 'expense' and self.amount > self.account.current_balance:
-            raise ValidationError({
-                'amount': [f"Expense cannot exceed the current balance of {self.account.current_balance}."]
-            })
+    
+        
 
     def save(self, *args, **kwargs):
         # Run the custom validation
